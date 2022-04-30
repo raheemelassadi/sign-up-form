@@ -1,17 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,500;1,300&family=Raleway:wght@100;200;300;500&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: 200;
-    text-transform: uppercase;
 }
 
 body {
     overflow: hidden;
     font-family: 'Karla', sans-serif;
+    height: 100vh;
+}
+
+button[type=submit] {
+    margin-top: 20px;
+    font-family: 'Karla', sans-serif;
+    border: 1px solid white;
+    width: 20%;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 1px;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition: .1s ease-in;
+    margin-left: 0;
+}
+
+button[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Karla', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+    padding: 5px;
 }
 
 span {
@@ -19,8 +49,32 @@ span {
     text-decoration: underline;
 }
 
+label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
+    width: 400px;
+}
+
+input {
+    margin-bottom: 20px;
+    height: 35px;
+    width: 80%;
+    padding: 10px;
+}
+
 .container {
     display: flex;
+    position: relative;
 }
 
 #img-title{
@@ -55,12 +109,22 @@ img {
     opacity: 40%;
 }
 
-.form-container {
+.right-container {
     background-color: black;
     color: white;
     width: 100%;
 }
 
-form > h1 {
-    margin: 290px 0 10px 40px;
+form {
+    margin: 100px 70px 20px 70px;
 }
+
+.right-container > h1 {
+    margin-top: 280px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
+
+
+
