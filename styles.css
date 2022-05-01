@@ -33,6 +33,13 @@ button[type=submit]:hover {
     transform: scale(1.2);
 }
 
+button[type=submit]:active {
+    transform: scale(.9);
+    background-color: white;
+    color: black;
+    transition: .1s ease-in;
+}
+
 button {
     margin-top: 10px;
     margin-left: 10px;
@@ -42,6 +49,12 @@ button {
     font-size: 15px;
     border: none;
     padding: 5px;
+    cursor: pointer;
+    transition: .3 ease-in;
+}
+
+button:active {
+    transform: scale(.9);
 }
 
 span {
